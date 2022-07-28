@@ -4,9 +4,264 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" href="assets/favicon.png" rel="icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://kit.fontawesome.com/522cdd93db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Space+Mono:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Alix Faudot</title>
 </head>
 <body>
-    <h1> 🍉 hi i'm alix and this is my portfolio. more to come! 🍉 </h1>
+
+    <!-- HEADER -->
+    <header id="home">
+
+        <!-- NAV -->
+        <nav class="mobile-nav">
+
+            <button tabindex="0">
+                <i class="hidden-menu-select fas fa-ellipsis-v" aria-label="open menu"></i>
+            </button>
+            
+            <div class="mobile-menu-dropdown">
+                <ul>
+                    <li class="nav-item" tabindex="0">
+                        <a href="#home" class="nav-icon"><i class="fas fa-home" aria-hidden="true"></i></a>
+                        <p class="nav-item-text">home</p>
+                    </li>
+                    <li class="nav-item" tabindex="0">
+                            <a href="#about" class="nav-icon"><i class="fas fa-user-circle" aria-hidden="true"></i></a>
+                            <p class="nav-item-text">about me</p>
+                    </li>
+                    <li class="nav-item" tabindex="0">
+                        <a href="#projects" class="nav-icon"><i class="fas fa-palette" aria-hidden="true"></i></a>
+                        <p class="nav-item-text">projects</p>
+                    </li>
+                    <li class="nav-item" tabindex="0">
+                            <a href="#contact" class="nav-icon"><i class="fas fa-at" aria-hidden="true"></i></a>
+                            <p class="nav-item-text">contact</p>
+                    </li>
+                </ul>   
+            </div>
+
+            <h1>hi, i'm alix</h1>
+            <h2>front end developer</h2>
+            <p>outdoor enthusiast, bicyclist, fruit lover</p>
+
+        </nav>
+
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- ABOUT section -->
+        <section class="about wrapper" id="about">
+            <div class="about-image">
+                <div class="about-me-SVG">
+                    <img src="" aria-hidden="true">
+                </div>
+                <div class="alix-photo">
+                    <img src="" alt="portrait photo of alix faudot">
+                </div>
+                
+            </div>
+            <div class="about-text">
+                <h3>me:</h3>
+                <p class="about-me-text">My name is <span class="alix-faudot">Alix Faudot</span> and I'm a front end developer. I have a background in XXX and everything I touch is <span class="colourful">colourful</span>. CSS is my jam, I love the challenges of Javascript, and I get so much joy out of making websites that are cute, functional, and accessible to <span class="everyone">everyone</span>. I am exhilarated by the challenges and rewards that come with coding and how there are always new things to learn and problems to solve. All of the pieces in my portfolio were designed and built by me. I hope you like them as much as I do!</p>
+            </div>
+        </section>
+
+        <!-- PROJECTS section -->
+        <section class="work wrapper" id="projects">
+            <h3 class="work-h3">some things i've made</h3>
+            <div class="project-1-2">
+                <div class="project project-1">
+                    <div class="project-details">
+                        <div class="project-image">
+                            <img src="" alt="thumbnail of Musings of Willow project">
+                        </div>
+                        <div class="tools-used">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>Sass</p>
+                            <p>Responsive Design</p>
+                            <p>JavaScript</p>
+                            <p>Github</p>
+                        </div>
+                        <div class="project-links" tabindex="0">
+                            <a href="" class="project-link" target="_blank">view live</a>
+                            <a href="" class="project-link" target="_blank">view github</a>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h4>Musings of Willow</h4>
+                        <p>A multi-page, functional, and responsive website implemented from a design. </p>
+                    </div>
+                </div>
+                <div class="project project-2">
+                    <div class="project-details">
+                        <div class="project-image">
+                            <img src="" alt="thumbnail of Feel Good Makeup project">
+                        </div>
+                        <div class="tools-used">
+                            <p>RESTful API</p>
+                            <p>Paired Programming</p>
+                            <p>CSS</p>
+                            <p>Sass</p>
+                            <p>HTML</p>
+                            <p>JavaScript</p>
+                            <p>Github</p>
+                        </div>
+                        <div class="project-links" tabindex="0">
+                            <a href="" class="project-link" target="_blank">view live</a>
+                            <a href="" class="projectLink" target="_blank">view github</a>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h4>Feel Good Makeup</h4>
+                        <p>This paired programming project was created with Chris West using an API.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-3-4">
+                <div class="project project-3">
+                    <div class="project-details">
+                        <div class="project-image">
+                            <img src="" alt="thumbnail of X project">
+                        </div>
+                        <div class="tools-used">
+                            <p>React</p>
+                            <p>Firebase</p>
+                            <p>CSS</p>
+                            <p>Github</p>
+                        </div>
+                        <div class="project-links" tabindex="0">
+                            <a href="" class="project-link" target="_blank">view live</a>
+                            <a href="https://www.github.com/rebrobinson/secretAdmirer" class="projectLink" target="_blank">view github</a>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h4>Project 3</h4>
+                        <p>XXX! This app was my first time creating something with React. It was also my first time storing and accessing data in a database. It was a lot to learn at once but I loved the challenge and am so proud of what I created.</p>
+                    </div>
+                </div>
+                <div class="project project-4">
+                    <div class="project-details">
+                        <div class="project-image">
+                            <img src="" alt="thumbnail of X project">
+                        </div>
+                        <div class="tools-used">
+                            <p>API</p>
+                            <p>group work</p>
+                            <p>React</p>
+                            <p>CSS</p>
+                        </div>
+                        <div class="project-links" tabindex="0">
+                            <a href="" class="project-link" target="_blank">view live</a>
+                            <a href="" class="project-link" target="_blank">view github</a>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h4>Project 4</h4>
+                        <p>An app created with React and an API. This was a group project made by A, B, C, and myself. Working on a team of people makes problem solving a lot easier, and it's so cool to see a group of individuals contributing to the creation of something in their own unique way.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  SKILLS section -->
+        <section class="skills wrapper" id="skills">
+            <h3>here's what i know</h3>
+            <div class="skill-icons">
+                <div class="skill-container github-container">
+                    <i class="skill-icon github devicon-github-original" aria-label="github icon"></i>
+                    <p>github</p>
+                </div>
+                <div class="skill-container git-vontainer">
+                    <i class="skill-icon git devicon-git-plain" aria-label="git icon"></i>
+                    <p>git</p>
+                </div>
+                <div class="skill-container css-container">
+                    <i class="skill-icon css devicon-css3-plain" aria-label="css icon"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="skill-container react-container">
+                    <i class="skill-icon react devicon-react-original" aria-label="react icon"></i>
+                    <p>react</p>
+                </div>
+                <div class="skill-container firebase-container">
+                    <i class="skill-icon firebase devicon-firebase-plain" aria-label="firebase icon"></i>
+                    <p>firebase</p>
+                </div>
+                <div class="skill-container jquery-container">
+                    <i class="skill-icon jquery devicon-jquery-plain" aria-label="jquery icon"></i>
+                    <p>jQuery</p>
+                </div>
+                <div class="skill-container js-container">
+                    <i class="skill-icon js devicon-javascript-plain" aria-label="javascript icon"></i>
+                    <p>javascript</p>
+                </div>
+                <div class="skill-container html-container">
+                    <i class="skill-icon html devicon-html5-plain" aria-label="html icon"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="skill-container terminal-container">
+                    <i class="skill-icon terminal fa-solid fa-terminal" aria-label="command line icon"></i>
+                    <p>command line</p>
+                </div>
+                <div class="skill-container rest-container">
+                    <i class="skill-icon rest fa-solid fa-database" aria-label="rest api icon"></i>
+                    <p>REST API</p>
+                </div>
+                <div class="skill-container wcag-container">
+                    <i class="skill-icon wcag fa-solid fa-universal-access" aria-label="web accessibility icon"></i>
+                    <p>web accessibility</p>
+                </div>
+                <div class="skill-container sass-container">
+                    <i class="skill-icon sass devicon-sass-original" aria-label="sass icon"></i>
+                    <p>sass</p>
+                </div>
+                <div class="skill-container vscode-container">
+                    <i class="skill-icon vscode devicon-visualstudio-plain" aria-label="VS code icon"></i>
+                    <p>vs code</p>
+                </div>
+                <div class="skill-container terminal-container">
+                    <i class="skill-icon terminal fas fa-terminal" aria-label="terminal icon"></i>
+                    <p>terminal</p>
+                </div>
+                <div class="skill-container mobile-container">
+                    <i class="skill-icon mobile fas fa-mobile-alt" aria-label="responsive design icon"></i>
+                    <p>responsive design</p>
+                </div>
+            </div>
+        </section>        
+
+        <!-- CONTACT section -->
+        <section class="contact wrapper" id="contact">
+            <h3 class="reach-out">reach out</h3>
+            <div class="contact-img-form">
+                <div class="contact-image">
+                </div>
+                <form action="https://formspree.io/f/mzbonnde" method="POST">
+                    <p>Hire me!! Or just send me an email. Use the form below or directly to <a href="mailto: alixfaudot@gmail.com">alixfaudot@gmail.com</a>. TTYL!</p>
+                    <label for="name" class="visually-hidden">enter your name</label>
+                    <input name="name" type="text" id="name" placeholder="your name">
+                    <label for="email" class="visually-hidden">enter your email</label>
+                    <input name="email" type="email" id="email" placeholder="your email">
+                    <textarea name="message" id="message" placeholder="your message" cols="30" rows="8"></textarea>
+                    <button type="submit">send</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© Alix Faudot 2022</p>
+    </footer>
+
 </body>
 </html>
