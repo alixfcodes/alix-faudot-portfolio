@@ -1,0 +1,47 @@
+html {
+    font-size: 125%;
+}
+
+body, p {
+    font-family: $bodyFont;
+}
+
+h1, h3 {
+    font-family: $headingFont;
+    color: black;
+    background-color: $pink;
+}
+
+h1 {
+    font-size: 12vw;
+    background-color: $orange;
+}
+    // h3::before {
+//     content: "";
+//     position: absolute;
+//     left: 7%;
+//     bottom: 10px;
+//     width: 200px;
+//     height: 14px;
+//     transform: skew(-12deg) translateX(-50%);
+//     background: rgba(238,111,87,0.5);
+//     z-index: -1;
+// }
+
+// .contact-title::before {
+//     content: "";
+//     position: absolute;
+//     left: 7%;
+//     bottom: 10px;
+//     width: 200px;
+//     height: 14px;
+//     transform: skew(-12deg) translateX(-50%);
+//     background: rgba(238,111,87,0.5);
+//     z-index: -1;
+// }
+
+
+h3 {
+    font-size: 3rem;
+    border-bottom: 5px solid black;
+}

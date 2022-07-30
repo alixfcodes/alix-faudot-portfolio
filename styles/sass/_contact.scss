@@ -1,0 +1,15 @@
+.contact {
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px;
+}
+
+.social-nav ul {
+    display: flex; 
+    justify-content: space-between;
+}

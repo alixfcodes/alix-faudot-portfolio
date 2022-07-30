@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="image/png" href="assets/favicon.png" rel="icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <script src="https://kit.fontawesome.com/522cdd93db.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Space+Mono:400,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Space+Grotesk&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="styles/style.css">
     <title>Alix Faudot</title>
 </head>
@@ -18,38 +19,43 @@
     <header id="home">
 
         <!-- NAV -->
-        <nav class="mobile-nav">
+        <nav class="desktop-nav">
 
             <button tabindex="0">
                 <i class="hidden-menu-select fas fa-ellipsis-v" aria-label="open menu"></i>
             </button>
             
-            <div class="mobile-menu-dropdown">
-                <ul>
-                    <li class="nav-item" tabindex="0">
-                        <a href="#home" class="nav-icon"><i class="fas fa-home" aria-hidden="true"></i></a>
-                        <p class="nav-item-text">home</p>
-                    </li>
-                    <li class="nav-item" tabindex="0">
-                            <a href="#about" class="nav-icon"><i class="fas fa-user-circle" aria-hidden="true"></i></a>
-                            <p class="nav-item-text">about me</p>
-                    </li>
-                    <li class="nav-item" tabindex="0">
-                        <a href="#projects" class="nav-icon"><i class="fas fa-palette" aria-hidden="true"></i></a>
-                        <p class="nav-item-text">projects</p>
-                    </li>
-                    <li class="nav-item" tabindex="0">
-                            <a href="#contact" class="nav-icon"><i class="fas fa-at" aria-hidden="true"></i></a>
-                            <p class="nav-item-text">contact</p>
-                    </li>
-                </ul>   
-            </div>
-
-            <h1>hi, i'm alix</h1>
-            <h2>front end developer</h2>
-            <p>outdoor enthusiast, bicyclist, fruit lover</p>
+            <ul class="desktop-menu-dropdown">
+                <li class="nav-item" tabindex="0">
+                    <a href="#home" class="nav-icon"><i class="fas fa-home" aria-hidden="true"></i></a>
+                    <p class="nav-item-text">home</p>
+                </li>
+                <li class="nav-item" tabindex="0">
+                    <a href="#about" class="nav-icon"><i class="fas fa-user-circle" aria-hidden="true"></i></a>
+                    <p class="nav-item-text">about me</p>
+                </li>
+                <li class="nav-item" tabindex="0">
+                    <a href="#projects" class="nav-icon"><i class="fas fa-palette" aria-hidden="true"></i></a>
+                    <p class="nav-item-text">projects</p>
+                </li>
+                <li class="nav-item" tabindex="0">
+                    <a href="#contact" class="nav-icon"><i class="fas fa-at" aria-hidden="true"></i></a>
+                    <p class="nav-item-text">contact</p>
+                </li>
+            </ul>   
 
         </nav>
+
+        <div class="hero-area">
+            <div class="hero-text">
+                <h1>hi, i'm alix</h1>
+                <h2>front end developer</h2>
+                <p>outdoor enthusiast, bicyclist, fruit lover</p>
+                <a href="" download="">
+                    <button class="resume">Download my resume</button>
+                </a>
+            </div>
+        </div>
 
     </header>
 
@@ -68,118 +74,111 @@
                 
             </div>
             <div class="about-text">
-                <h3>me:</h3>
+                <h3 class="about-title">me:</h3>
                 <p class="about-me-text">My name is <span class="alix-faudot">Alix Faudot</span> and I'm a front end developer.</p>
             </div>
         </section>
 
         <!-- PROJECTS section -->
-        <section class="work wrapper" id="projects">
-            <h3 class="work-h3">some things i've made</h3>
-            <div class="project-1-2">
+        <section class="projects wrapper" id="projects">
+            <h3 class="projects-title">some things i've made</h3>
+            <div class="projects-container">
                 <div class="project project-1">
-                    <div class="project-details">
                         <div class="project-image">
-                            <img src="" alt="thumbnail of Musings of Willow project">
+                            <img src="./assets/image-placeholder.jpg" alt="thumbnail of Musings of Willow project">
                         </div>
-                        <div class="tools-used">
-                            <p>HTML</p>
-                            <p>CSS</p>
-                            <p>Sass</p>
-                            <p>Responsive Design</p>
-                            <p>JavaScript</p>
-                            <p>Github</p>
+                        <div class="project-description">
+                            <h4>Musings of Willow</h4>
+                            <p>A multi-page, functional, and responsive website implemented from a design. </p>
                         </div>
+                        <ul class="tools-used">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Sass</li>
+                            <li>Responsive Design</li>
+                            <li>JavaScript</li>
+                            <li>Github</li>
+                        </ul>
                         <div class="project-links" tabindex="0">
                             <a href="" class="project-link" target="_blank">view live</a>
-                            <a href="" class="project-link" target="_blank">view github</a>
+                            <a href="" class="project-link" target="_blank">view code</a>
                         </div>
-                    </div>
-                    <div class="project-description">
-                        <h4>Musings of Willow</h4>
-                        <p>A multi-page, functional, and responsive website implemented from a design. </p>
-                    </div>
                 </div>
                 <div class="project project-2">
-                    <div class="project-details">
                         <div class="project-image">
-                            <img src="" alt="thumbnail of Feel Good Makeup project">
+                            <img src="./assets/image-placeholder.jpg" alt="thumbnail of Feel Good Makeup project">
                         </div>
-                        <div class="tools-used">
-                            <p>RESTful API</p>
-                            <p>Paired Programming</p>
-                            <p>CSS</p>
-                            <p>Sass</p>
-                            <p>HTML</p>
-                            <p>JavaScript</p>
-                            <p>Github</p>
+                        <div class="project-description">
+                            <h4>Feel Good Makeup</h4>
+                            <p>This paired programming project was created with Chris West using an API.</p>
                         </div>
+                        <ul class="tools-used">
+                            <li>RESTful API</li>
+                            <li>Paired Programming</li>
+                            <li>CSS</li>
+                            <li>Sass</li>
+                            <li>HTML</li>
+                            <li>JavaScript</li>
+                            <li>Github</li>
+                        </ul>
                         <div class="project-links" tabindex="0">
                             <a href="" class="project-link" target="_blank">view live</a>
-                            <a href="" class="projectLink" target="_blank">view github</a>
+                            <a href="" class="project-link" target="_blank">view code</a>
                         </div>
-                    </div>
-                    <div class="project-description">
-                        <h4>Feel Good Makeup</h4>
-                        <p>This paired programming project was created with Chris West using an API.</p>
-                    </div>
                 </div>
             </div>
-            <div class="project-3-4">
+            <div class="projects-container">
                 <div class="project project-3">
-                    <div class="project-details">
                         <div class="project-image">
-                            <img src="" alt="thumbnail of X project">
+                            <img src="./assets/image-placeholder-2.jpg" alt="thumbnail of X project">
                         </div>
-                        <div class="tools-used">
-                            <p>React</p>
-                            <p>Firebase</p>
-                            <p>CSS</p>
-                            <p>Github</p>
+                        <div class="project-description">
+                            <h4>Project 3</h4>
+                            <p>This app was my first time creating something with React.</p>
                         </div>
+                        <ul class="tools-used">
+                            <li>React</li>
+                            <li>Firebase</li>
+                            <li>CSS</li>
+                            <li>Github</li>
+                        </ul>
                         <div class="project-links" tabindex="0">
                             <a href="" class="project-link" target="_blank">view live</a>
-                            <a href="https://www.github.com/rebrobinson/secretAdmirer" class="projectLink" target="_blank">view github</a>
+                            <a href="https://www.github.com/rebrobinson/secretAdmirer" class="project-link" target="_blank">view code</a>
                         </div>
-                    </div>
-                    <div class="project-description">
-                        <h4>Project 3</h4>
-                        <p>This app was my first time creating something with React.</p>
-                    </div>
                 </div>
                 <div class="project project-4">
-                    <div class="project-details">
                         <div class="project-image">
-                            <img src="" alt="thumbnail of X project">
+                            <img src="./assets/image-placeholder.jpg" alt="thumbnail of X project">
                         </div>
-                        <div class="tools-used">
-                            <p>API</p>
-                            <p>group work</p>
-                            <p>React</p>
-                            <p>CSS</p>
+                        <div class="project-description">
+                            <h4>Project 4</h4>
+                            <p>An app created with React and an API. This was a group project made by A, B, C, and myself.</p>
                         </div>
+                        <ul class="tools-used">
+                            <li>API</li>
+                            <li>group work</li>
+                            <li>React</li>
+                            <li>CSS</li>
+                        </ul>
                         <div class="project-links" tabindex="0">
                             <a href="" class="project-link" target="_blank">view live</a>
-                            <a href="" class="project-link" target="_blank">view github</a>
+                            <a href="" class="project-link" target="_blank">view code</a>
                         </div>
-                    </div>
-                    <div class="project-description">
-                        <h4>Project 4</h4>
-                        <p>An app created with React and an API. This was a group project made by A, B, C, and myself.</p>
-                    </div>
                 </div>
             </div>
         </section>
 
         <!--  SKILLS section -->
         <section class="skills wrapper" id="skills">
-            <h3>here's what i know</h3>
+            <h3 class="skills-title">here's what i know</h3>
+            <div class="skills-container">
             <div class="skill-icons">
                 <div class="skill-container github-container">
                     <i class="skill-icon github devicon-github-original" aria-label="github icon"></i>
                     <p>github</p>
                 </div>
-                <div class="skill-container git-vontainer">
+                <div class="skill-container git-container">
                     <i class="skill-icon git devicon-git-plain" aria-label="git icon"></i>
                     <p>git</p>
                 </div>
@@ -236,11 +235,28 @@
                     <p>responsive design</p>
                 </div>
             </div>
+            <div class="skill-color-block"></div>
+            </div>
         </section>        
 
         <!-- CONTACT section -->
         <section class="contact wrapper" id="contact">
-            <h3 class="reach-out">reach out</h3>
+            <h3 class="contact-title">reach out</h3>
+            <nav class="social-nav">
+                <ul>
+                    <li>
+                        <a href=""><i class="fa-brands fa-github"></i>github</a>
+                    <li>
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i>linkedin</a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-twitter"></i>twitter</a>
+                    </li>
+                    <li>
+                        <a href="mailto: alixfaudot@gmail.com"><i class="fa-solid fa-envelope"></i>email</a>
+                    </li>
+                </ul>
+            </nav>
             <div class="contact-img-form">
                 <div class="contact-image">
                 </div>
