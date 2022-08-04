@@ -1,15 +1,83 @@
-.contact {
-    height: 100vh;
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $text-primary;
+    padding-top: 80px;
 }
+
+.contact-text,
+.contact-form {
+    width: 45%;
+}
+
+.contact-text {
+    padding-left: 15px;
+}
+
+    // input {
+    //     appearance: none;
+    //     padding: 15px;
+    //     box-shadow: -5px 5px 0 0 $text-primary;
+
+    // }
+    // textarea {
+    //     appearance: none;
+    //     resize: none;
+    //     padding: 10px 15px 15px 15px;
+    //     box-shadow: -5px 5px 0 0 $text-primary;
+
+    // }
+
 
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 40px;
+    padding: 40px;
+    label {
+        padding-bottom: 5px;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+    }
+    input,
+    textarea {
+        // appearance: none;
+        border: 1px solid $text-primary;
+        background-color: inherit;
+        box-shadow: -2px 2px 0 0 $text-primary;
+        margin-bottom: 25px;
+        outline: none;
+        &:hover {
+            box-shadow: -4px 4px solid $accent-blue;
+        }
+        &:focus {
+            box-shadow: -4px 4px 0 0 $accent-blue;
+            border: 1px solid $accent-blue;
+        }
+    }
+    input {
+        padding: 15px;
+    }
+    textarea {
+        resize: none;
+        padding: 10px 15px 15px 15px;
+    }
+    button {
+        width: 120px;
+    }
 }
 
 .social-nav ul {
     display: flex; 
-    justify-content: space-between;
+    justify-content: flex-start;
+    li {
+        font-size: 1.3rem;
+        padding-right: 30px;
+        i:hover, i:focus {
+            transition: 0.4s;
+            transform: scale(1.3);
+        }
+    }
 }

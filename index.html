@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/522cdd93db.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Space+Grotesk&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="styles/style.css">
     <title>Alix Faudot</title>
@@ -18,44 +18,55 @@
     <!-- HEADER -->
     <header id="home">
 
+        <!-- WRAPPER -->
+        <div class="wrapper">
+
         <!-- NAV -->
         <nav class="desktop-nav">
 
-            <button tabindex="0">
+            <div class="desktop-logo-menu">
+
+            <div class="logo">AF</div>
+
+            <!-- <button tabindex="0">
                 <i class="hidden-menu-select fas fa-ellipsis-v" aria-label="open menu"></i>
-            </button>
+            </button> -->
             
             <ul class="desktop-menu-dropdown">
                 <li class="nav-item" tabindex="0">
-                    <a href="#home" class="nav-icon"><i class="fas fa-home" aria-hidden="true"></i></a>
-                    <p class="nav-item-text">home</p>
+                    <a href="#home" class="nav-icon"><p class="nav-item-text">Home</p></a>
                 </li>
                 <li class="nav-item" tabindex="0">
-                    <a href="#about" class="nav-icon"><i class="fas fa-user-circle" aria-hidden="true"></i></a>
-                    <p class="nav-item-text">about me</p>
+                    <a href="#about" class="nav-icon"><p class="nav-item-text">About</p></a>
                 </li>
                 <li class="nav-item" tabindex="0">
-                    <a href="#projects" class="nav-icon"><i class="fas fa-palette" aria-hidden="true"></i></a>
-                    <p class="nav-item-text">projects</p>
+                    <a href="#projects" class="nav-icon"><p class="nav-item-text">Projects</p></a>
                 </li>
                 <li class="nav-item" tabindex="0">
-                    <a href="#contact" class="nav-icon"><i class="fas fa-at" aria-hidden="true"></i></a>
-                    <p class="nav-item-text">contact</p>
+                    <a href="#skills" class="nav-icon"><p class="nav-item-text">Skills</p></a>
                 </li>
-            </ul>   
+                <li class="nav-item" tabindex="0">
+                    <a href="#contact" class="nav-icon"><p class="nav-item-text">Contact</p></a>
+                </li>
+            </ul>
+
+            </div>
+            
+            <div class="mode-switch">ON/OFF</div>
 
         </nav>
 
         <div class="hero-area">
             <div class="hero-text">
-                <h1>hi, i'm alix</h1>
-                <h2>front end developer</h2>
-                <p>outdoor enthusiast, bicyclist, fruit lover</p>
-                <a href="" download="">
-                    <button class="resume">Download my resume</button>
-                </a>
+                <div class="section-heading">
+                    <h1>Hello</h1>
+                    <div class="accent-line"></div>
+                </div>
+                <h3>I'm Alix, a <span class="highlight">front-end web developer</span> with a passion to build clean, responsive and accessible web applications</h3>
             </div>
         </div>
+        
+        </div><!-- END of WRAPPER -->
 
     </header>
 
@@ -63,25 +74,53 @@
     <main>
 
         <!-- ABOUT section -->
-        <section class="about wrapper" id="about">
-            <div class="about-image">
-                <div class="about-me-SVG">
-                    <img src="" aria-hidden="true">
+        <section class="about" id="about">
+            <div class="wrapper">
+            <div class="about-container">
+                <h2 class="about-title">Alix Faudot</h2>
+                <p class="about-text">You might see my professional bio around the web but if you ask me in person you may get a more candid response. I am a French native and been living in Toronto, Ontario, Canada for the past 8 years. I love working with my hands (building bicycles, woodworking, yard work...) and figuring out how to make things work.
+                <br>
+                I always learn best by doing.
+                <br>
+                I have a habit of fully investing in, for better or worse, any project or goal in front of me.
+                <br>
+                Design has been a hobby of mine since before I knew what a "Designer" was. But over the last 4 years I have fully committed to learning, practicing, and growing as a designer. I think I always have so much more to learn and am excited to keep growing as a designer, musician, creator, and person.</p>
+                <div class="about-links">
+                    <nav class="social-nav">
+                        <ul>
+                            <li>
+                                <a href=""><i class="fa-brands fa-github"></i></a>
+                            <li>
+                                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="mailto: alixfaudot@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="" download="">
+                    <button class="resume">Download my resume</button>
+                    </a>
                 </div>
-                <div class="alix-photo">
-                    <img src="" alt="portrait photo of alix faudot">
-                </div>
-                
             </div>
-            <div class="about-text">
-                <h3 class="about-title">me:</h3>
-                <p class="about-me-text">My name is <span class="alix-faudot">Alix Faudot</span> and I'm a front end developer.</p>
+
+            <div class="about-image">
+                <div class="about-photo">
+                    <img src="" alt="portrait photo of alix faudot" aria-hidden="true">
+                </div>
             </div>
         </section>
 
         <!-- PROJECTS section -->
-        <section class="projects wrapper" id="projects">
-            <h3 class="projects-title">some things i've made</h3>
+        <section class="projects" id="projects">
+            <div class="wrapper">
+                <div class="section-heading">
+                    <h2 class="projects-title">Projects</h2>
+                    <div class="accent-line"></div>
+                </div>
             <div class="projects-container">
                 <div class="project project-1">
                         <div class="project-image">
@@ -167,12 +206,16 @@
                         </div>
                 </div>
             </div>
+            </div>
         </section>
 
         <!--  SKILLS section -->
-        <section class="skills wrapper" id="skills">
-            <h3 class="skills-title">here's what i know</h3>
-            <div class="skills-container">
+        <section class="skills" id="skills">
+            <div class="wrapper">
+                <div class="section-heading">
+                    <h2 class="skills-title">Skills</h2>
+                    <div class="accent-line"></div>
+                </div>
             <div class="skill-icons">
                 <div class="skill-container github-container">
                     <i class="skill-icon github devicon-github-original" aria-label="github icon"></i>
@@ -235,40 +278,42 @@
                     <p>responsive design</p>
                 </div>
             </div>
-            <div class="skill-color-block"></div>
             </div>
         </section>        
 
         <!-- CONTACT section -->
-        <section class="contact wrapper" id="contact">
-            <h3 class="contact-title">reach out</h3>
-            <nav class="social-nav">
-                <ul>
-                    <li>
-                        <a href=""><i class="fa-brands fa-github"></i>github</a>
-                    <li>
-                        <a href=""><i class="fa-brands fa-linkedin-in"></i>linkedin</a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa-brands fa-twitter"></i>twitter</a>
-                    </li>
-                    <li>
-                        <a href="mailto: alixfaudot@gmail.com"><i class="fa-solid fa-envelope"></i>email</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="contact-img-form">
-                <div class="contact-image">
+        <section class="contact" id="contact">
+            <div class="wrapper contact-container">
+                <div class="contact-text">
+                    <h2 class="contact-title">Get in touch</h2>
+                    <p>Interested in working on a project together? Let's start a conversation. Tell me a bit about what you are looking for and I'll be in touch! Use the form or send me an email directly to <a href="mailto: alixfaudot@gmail.com">alixfaudot@gmail.com</a>. TTYL!</p>
+                    <nav class="social-nav">
+                        <ul>
+                            <li>
+                                <a href=""><i class="fa-brands fa-github"></i></a>
+                            <li>
+                                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="mailto: alixfaudot@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
+            <div class="contact-form">
                 <form action="https://formspree.io/f/mzbonnde" method="POST">
-                    <p>Hire me!! Or just send me an email. Use the form below or directly to <a href="mailto: alixfaudot@gmail.com">alixfaudot@gmail.com</a>. TTYL!</p>
-                    <label for="name" class="visually-hidden">enter your name</label>
-                    <input name="name" type="text" id="name" placeholder="your name">
-                    <label for="email" class="visually-hidden">enter your email</label>
-                    <input name="email" type="email" id="email" placeholder="your email">
-                    <textarea name="message" id="message" placeholder="your message" cols="30" rows="8"></textarea>
-                    <button type="submit">send</button>
+                    <label for="name" class="visually-hidden">Name</label>
+                    <input name="name" type="text" id="name" placeholder="your name" required>
+                    <label for="email" class="visually-hidden">Email address</label>
+                    <input name="email" type="email" id="email" placeholder="your email" required>
+                    <label for="message">Message</label>
+                    <textarea name="message" class="message" id="message" placeholder="Message" cols="30" rows="8" required></textarea>
+                    <button type="submit">Send</button>
                 </form>
+            </div>
             </div>
         </section>
 
@@ -276,7 +321,7 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>© Alix Faudot 2022</p>
+        <a href="#home"><p>Back to Top ↑</p></a>
     </footer>
 
 </body>

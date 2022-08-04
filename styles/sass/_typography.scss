@@ -4,17 +4,18 @@ html {
 
 body, p {
     font-family: $bodyFont;
+    color: $text-primary;
+    font-weight: 300;
 }
 
-h1, h3 {
+h1, h2, h3 {
     font-family: $headingFont;
-    color: black;
-    background-color: $pink;
 }
 
 h1 {
-    font-size: 12vw;
-    background-color: $orange;
+    font-size: 7rem;
+    padding-right: 25px;
+
 }
     // h3::before {
 //     content: "";
@@ -40,8 +41,15 @@ h1 {
 //     z-index: -1;
 // }
 
+h2 {
+    font-size: 4rem;
+}
 
 h3 {
-    font-size: 3rem;
-    border-bottom: 5px solid black;
+    font-size:  3rem;
+}
+
+
+button {
+    font-weight: $headingFont;
 }

@@ -1,9 +1,16 @@
-// footer {
-//     height: 200px;
-// }
+
 
 footer {
-    border-top: 5px solid black;
-    height: 200px;
-    background-color: $green;
+    border-top: 1px solid black;
+    height: 100px;
+    a {
+        text-align: center;
+        font-size: 0.85rem;
+        font-weight: 700;
+        padding: 40px;
+        &:hover, &:focus {
+            text-decoration: solid underline $accent-blue 3px;
+            text-underline-offset: 12px;
+        }
+    }
 }

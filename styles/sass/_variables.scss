@@ -1,8 +1,20 @@
 /* fonts */
-$headingFont: 'Playfair Display', serif;
-$bodyFont: 'Space Grotesk', sans-serif;
+$headingFont: 'Eczar', serif;
+$bodyFont: 'Montserrat', sans-serif;
 
 /* colors */
+// default light mode theme
+$surface-primary: #F5F2ED;
+$surface-secondary: #F0EBE4;
+$text-primary: #12161A;
+
+/// dark mode inverted theme
+$inverted-surface-primary: #12161A;
+$inverted-surface-secondary: #1B2126;
+$inverted-text-primary: #F5F2ED;
+
+$accent-blue: #168CFA;
+
 $orange: #FFC065;
 $pink: #FE6564;
 $green: #04897C;

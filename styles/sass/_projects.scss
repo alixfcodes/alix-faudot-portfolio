@@ -1,24 +1,30 @@
-.projects {
-     border: 5px solid black;
-}
+// .projects {
+//     // border-top: 4px solid black;
+//     background-color: #F3F3F5;
+// }
 
 .projects-container { 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 80px;
+    padding: 80px;
 }
 
 .project {
     display: flex;
     width: 46%;
+    background-color: $surface-secondary;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 3px solid black;
-        box-shadow: 10px 10px black;
+        border: 1px solid $text-primary;
+        box-shadow: -5px 5px $text-primary;
         padding: 40px;
         text-align: center;
+        transition: 0.4s;
+        &:hover, &:focus {
+            box-shadow: -10px 10px $accent-blue;
+        }
     }
 
 
@@ -26,7 +32,7 @@
     width: 70%;
     img {
         width: 100%;
-        border: 3px solid black;
+        border: 1px solid black;
     }
 
 }

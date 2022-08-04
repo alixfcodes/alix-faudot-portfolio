@@ -1,41 +1,46 @@
 header {
-    background-color: white;
     height: 100vh;
+    // background-color: #EEEEEE;
+    // background-image: url(../assets/v996-007.jpg);
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
+}
+
+header:after {
+    content: "";
+    width: 100%;
+    height: auto;
+    background-image: url(../assets/wave.svg);
+    background-size: 100% 500px;
+    background-repeat: no-repeat;
+    display: block;
 }
 
 .desktop-nav {
     display: flex;
     justify-content: space-between;
-    background-color: $orange;
-    border: 5px solid black;
+    border: none;
     font-family: $bodyFont;
+    padding-top: 30px;
+}
+
+.desktop-logo-menu {
+    display: flex;
+    width: 500px;
 }
 
 .desktop-menu-dropdown {
     display: flex;
     justify-content: space-around;
-    width: 50%;
-    background-color: black;
-    color: white;
-    padding-top: 15px;
-    .nav-item { 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .nav-icon i {
-                color: inherit;
-            }
+    width: 100%;
+    font-size: 0.85rem;
+    font-weight: normal;
+    li a {
+        &:hover, &:focus {
+            text-decoration: solid underline $accent-blue 3px;
+            text-underline-offset: 12px;
         }
-}
-
-.nav-item-text {
-    visibility: hidden;
-    transition: 0.4s;
-}
-
-.nav-item:hover {
-    p {
-        visibility: visible;
     }
 }
 
@@ -43,10 +48,18 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
+    align-items: flex-start;
 }
 
-.hero-text {
-    margin-left: 80px;
-    margin-bottom: 100px;
+.hero-heading {
+    display: flex;
+}
+
+.highlight {
+    text-shadow: 0 0 0 $accent-blue;
+    transition: text-shadow .2s, color .2s;
+    &:hover, &:focus {
+    transform: translate(2px,-2px);
+    text-shadow: -2px -2px 0 $accent-blue;
+    }
 }

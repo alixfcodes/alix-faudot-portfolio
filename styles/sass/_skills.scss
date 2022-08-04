@@ -1,16 +1,10 @@
-.skills  {
-    background-color: white;
-    border-bottom: 5px solid black;
-}
+// .skills  {
+//     background-color: white;
+//     // border-top: 4px solid black;
+// }
 
 .skills-container {
     display: flex;
-}
-
-.skill-color-block {
-    width: 300px;
-    background-color: $green;
-    border-left: 5px solid black;
 }
 
 .skill-icons {
@@ -36,7 +30,7 @@
 }
 
 .skill-icon {
-    font-size: 6vw;
+    font-size: 4rem;
     padding-bottom: 20px;
 }
 
