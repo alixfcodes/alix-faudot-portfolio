@@ -36,7 +36,6 @@ button,
     padding: 12px 24px;
     box-shadow: none;
     cursor: pointer;
-    font-family: $headingFont;
     transition: box-shadow 200ms ease;
     &:hover, &:focus {
         box-shadow: -5px 5px $accent-blue;
@@ -44,11 +43,12 @@ button,
 }
 
 section {
-    padding: 50px 0;
+    margin-bottom: 80px;
 }
 
 .section-heading {
     display: flex;
+    padding-bottom: 60px;
 }
 
 .accent-line {

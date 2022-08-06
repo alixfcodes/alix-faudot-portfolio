@@ -32,7 +32,7 @@
 
 .hero-area {
     position: absolute; 
-    top: 30%;
+    top: 20%;
 }
 
 // .hero-text {
@@ -80,6 +80,7 @@
   display: block;
   animation: pulse 2s infinite;
   color: $accent-blue;
+  text-align: center;
 }
 
 .chevron.bottom::before {
