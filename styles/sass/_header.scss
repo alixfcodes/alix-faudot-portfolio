@@ -1,20 +1,6 @@
-header {
+.header-container {
     height: 100vh;
-    // background-color: #EEEEEE;
-    // background-image: url(../assets/v996-007.jpg);
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
-}
-
-header:after {
-    content: "";
-    width: 100%;
-    height: auto;
-    background-image: url(../assets/wave.svg);
-    background-size: 100% 500px;
-    background-repeat: no-repeat;
-    display: block;
+    position: relative;
 }
 
 .desktop-nav {
@@ -37,7 +23,7 @@ header:after {
     font-size: 0.85rem;
     font-weight: normal;
     li a {
-        &:hover, &:focus {
+        &:hover, &:focus, &:active {
             text-decoration: solid underline $accent-blue 3px;
             text-underline-offset: 12px;
         }
@@ -45,15 +31,15 @@ header:after {
 }
 
 .hero-area {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    position: absolute; 
+    top: 30%;
 }
 
-.hero-heading {
-    display: flex;
-}
+// .hero-text {
+//     display: flex;
+//     flex-direction: column;
+//     // vertical-align: middle;
+// }
 
 .highlight {
     text-shadow: 0 0 0 $accent-blue;
@@ -62,4 +48,53 @@ header:after {
     transform: translate(2px,-2px);
     text-shadow: -2px -2px 0 $accent-blue;
     }
+}
+
+
+// @keyframes pulse {
+// 0% {
+//     transform: translate(0, 0);
+// }
+// 50% {
+//     transform: translate(0, 10px);
+// }
+// 100% {
+//     transform: translate(0, 0);
+// }
+// }
+
+.hero-scroll {
+    position: absolute;
+    bottom: 60px;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    padding-bottom: 40px;
+    left: 0;
+    right: 0;
+}
+
+.hero-scroll .chevron {
+  margin-top: 20px;
+  display: block;
+  animation: pulse 2s infinite;
+  color: $accent-blue;
+}
+
+.chevron.bottom::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.chevron::before {
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  content: '';
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  transform: rotate(-45deg);
+  vertical-align: top;
+  width: 20px;
 }

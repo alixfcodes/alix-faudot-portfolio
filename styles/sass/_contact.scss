@@ -2,48 +2,41 @@
 .contact-container {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid $text-primary;
-    padding-top: 80px;
+    align-items: center;
+    .contact-text,
+    .contact-form {
+        width: 48%;
+    }
+    .contact-text {
+        h2 {
+            padding-bottom: 20px;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 150%;
+            padding-bottom: 40px;
+        }
+    }   
+    .contact-form {
+        padding-right: 120px;
+    }
 }
-
-.contact-text,
-.contact-form {
-    width: 45%;
-}
-
-.contact-text {
-    padding-left: 15px;
-}
-
-    // input {
-    //     appearance: none;
-    //     padding: 15px;
-    //     box-shadow: -5px 5px 0 0 $text-primary;
-
-    // }
-    // textarea {
-    //     appearance: none;
-    //     resize: none;
-    //     padding: 10px 15px 15px 15px;
-    //     box-shadow: -5px 5px 0 0 $text-primary;
-
-    // }
-
 
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px;
     label {
         padding-bottom: 5px;
         text-transform: uppercase;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         letter-spacing: 2px;
     }
     input,
     textarea {
         // appearance: none;
+        font-size: 0.8rem;
+        font-family: $bodyFont;
         border: 1px solid $text-primary;
         background-color: inherit;
         box-shadow: -2px 2px 0 0 $text-primary;
@@ -59,6 +52,8 @@ form {
     }
     input {
         padding: 15px;
+        overflow: visible;
+        resize: none;
     }
     textarea {
         resize: none;
@@ -69,6 +64,13 @@ form {
     }
 }
 
+::placeholder {
+    font-family: $bodyFont;
+    color: #969696;
+    font-size: 0.8rem;
+    opacity: 1;
+}
+
 .social-nav ul {
     display: flex; 
     justify-content: flex-start;
@@ -76,8 +78,16 @@ form {
         font-size: 1.3rem;
         padding-right: 30px;
         i:hover, i:focus {
-            transition: 0.4s;
+            transition: 0.2s;
             transform: scale(1.3);
         }
+    }
+}
+
+.inline-link {
+    box-shadow: inset 0 -1px 0 0 $accent-blue;
+    transition: box-shadow 200ms ease;
+    &:hover, &:active {
+        box-shadow: inset 0 -3px 0 0 $accent-blue;
     }
 }

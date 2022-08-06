@@ -1,5 +1,5 @@
 // .skills  {
-//     background-color: white;
+//     background-color: $surface-secondary;
 //     // border-top: 4px solid black;
 // }
 
@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 80px;
+    margin: 40px;
 }
 
 .skill-container {
@@ -30,13 +30,13 @@
 }
 
 .skill-icon {
-    font-size: 4rem;
+    font-size: 3.5rem;
     padding-bottom: 20px;
 }
 
 .skill-container:hover {
     transition: 0.4s;
-    color: $pink;
+    color: $accent-blue;
     animation: shakeX;
     animation-duration: 2s;
     p {

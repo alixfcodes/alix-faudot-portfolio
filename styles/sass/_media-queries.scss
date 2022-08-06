@@ -1,0 +1,48 @@
+
+
+@media (max-width: 991px) {
+
+
+    // FONT size
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    // PROJECT
+    .project {
+        flex-direction: column;
+        .project-image,
+        .project-description {
+            width: 100%;
+        }
+    }
+
+    // CONTACT
+
+    .contact-container {
+        flex-direction: column;
+        .contact-text,
+        .contact-form {
+            width: 100%;
+        }
+        .contact-text {
+            padding-left: 0;
+        }
+        .social-nav {
+            margin-bottom: 40px;
+        }
+    }
+
+
+}
+
+
+@media (max-width: 767px) {
+
+    // FONT size
+
+    h2 {
+        font-size: 2.4rem;
+    }
+}

@@ -3,14 +3,19 @@
 footer {
     border-top: 1px solid black;
     height: 100px;
+    p {
+            text-align: center;
+            font-size: 0.85rem;
+            padding: 30px;
+        }
     a {
-        text-align: center;
-        font-size: 0.85rem;
-        font-weight: 700;
-        padding: 40px;
         &:hover, &:focus {
             text-decoration: solid underline $accent-blue 3px;
             text-underline-offset: 12px;
+        }
+
+        p.top-link {
+            font-weight: 700;
         }
     }
 }
