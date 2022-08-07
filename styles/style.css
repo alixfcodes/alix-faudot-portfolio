@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -334,6 +335,7 @@ h2, h3 {
 
 h2 {
   font-size: 3.2rem;
+  padding-right: 25px;
 }
 
 h3 {
@@ -348,6 +350,7 @@ h4 {
 button,
 a.button {
   font-family: "Sprat";
+  font-size: 1.2rem;
 }
 
 * {
@@ -376,10 +379,9 @@ li {
 }
 
 button,
-.button {
+a.button {
   font-size: 1.2rem;
   font-weight: 700;
-  line-height: 1.6;
   text-align: center;
   outline: none;
   color: #F5F2ED;
@@ -395,13 +397,14 @@ button,
   transition: box-shadow 200ms ease, -webkit-box-shadow 200ms ease;
 }
 button:hover, button:focus,
-.button:hover,
-.button:focus {
-  -webkit-box-shadow: -5px 5px #168CFA;
-          box-shadow: -5px 5px #168CFA;
+a.button:hover,
+a.button:focus {
+  -webkit-box-shadow: -3px 3px 0 0 #168CFA;
+          box-shadow: -3px 3px 0 0 #168CFA;
 }
 
 section {
+  padding-top: 40px;
   margin-bottom: 80px;
 }
 
@@ -409,16 +412,17 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   padding-bottom: 60px;
 }
 
 .accent-line {
+  display: inline-block;
   width: 100%;
   height: 1px;
   background-color: #12161A;
   -ms-flex-item-align: center;
       align-self: center;
-  margin-left: 25px;
 }
 
 .header-container {
@@ -464,6 +468,11 @@ section {
 .hero-area {
   position: absolute;
   top: 20%;
+  width: 100%;
+}
+
+.hero-text {
+  width: 100%;
 }
 
 .highlight {
@@ -475,6 +484,499 @@ section {
   -webkit-transform: translate(2px, -2px);
           transform: translate(2px, -2px);
   text-shadow: -2px -2px 0 #168CFA;
+}
+.highlight::before {
+  content: "​";
+  content: "​"/"front-end web developer";
+  alt: "front-end web developer";
+  white-space: break-spaces;
+  will-change: content;
+  -webkit-animation: typed-0 7.14s linear 1s infinite forwards;
+          animation: typed-0 7.14s linear 1s infinite forwards;
+}
+.highlight::after {
+  content: "​";
+  position: relative;
+  display: inline-block;
+  padding-right: 0.1ch;
+  border-right: 1ch solid currentColor;
+  white-space: nowrap;
+  -webkit-animation: typed-0-caret 0.75s linear 1s infinite forwards;
+          animation: typed-0-caret 0.75s linear 1s infinite forwards;
+}
+@-webkit-keyframes typed-0 {
+  0%, 1.3995602241% {
+    content: "​f";
+    content: "​f"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  1.4005602241%, 2.8001204482% {
+    content: "​fr";
+    content: "​fr"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  2.8011204482%, 4.2006806723% {
+    content: "​fro";
+    content: "​fro"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  4.2016806723%, 5.6012408964% {
+    content: "​fron";
+    content: "​fron"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  5.6022408964%, 7.0018011204% {
+    content: "​front";
+    content: "​front"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  7.0028011204%, 8.4023613445% {
+    content: "​front-";
+    content: "​front-"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  8.4033613445%, 9.8029215686% {
+    content: "​front-e";
+    content: "​front-e"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  9.8039215686%, 11.2034817927% {
+    content: "​front-en";
+    content: "​front-en"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  11.2044817927%, 12.6040420168% {
+    content: "​front-end";
+    content: "​front-end"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  12.6050420168%, 14.0046022409% {
+    content: "​front-end ";
+    content: "​front-end "/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  14.0056022409%, 15.405162465% {
+    content: "​front-end w";
+    content: "​front-end w"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  15.406162465%, 16.8057226891% {
+    content: "​front-end we";
+    content: "​front-end we"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  16.8067226891%, 18.2062829132% {
+    content: "​front-end web";
+    content: "​front-end web"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  18.2072829132%, 19.6068431373% {
+    content: "​front-end web ";
+    content: "​front-end web "/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  19.6078431373%, 21.0074033613% {
+    content: "​front-end web d";
+    content: "​front-end web d"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  21.0084033613%, 22.4079635854% {
+    content: "​front-end web de";
+    content: "​front-end web de"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  22.4089635854%, 23.8085238095% {
+    content: "​front-end web dev";
+    content: "​front-end web dev"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  23.8095238095%, 25.2090840336% {
+    content: "​front-end web deve";
+    content: "​front-end web deve"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  25.2100840336%, 26.6096442577% {
+    content: "​front-end web devel";
+    content: "​front-end web devel"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  26.6106442577%, 28.0102044818% {
+    content: "​front-end web develo";
+    content: "​front-end web develo"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  28.0112044818%, 29.4107647059% {
+    content: "​front-end web develop";
+    content: "​front-end web develop"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  29.4117647059%, 30.81132493% {
+    content: "​front-end web develope";
+    content: "​front-end web develope"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  30.81232493%, 61.3435378151% {
+    content: "​front-end web developer";
+    content: "​front-end web developer"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  61.3445378151%, 62.4639859944% {
+    content: "​front-end web develope";
+    content: "​front-end web develope"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  62.4649859944%, 63.5844341737% {
+    content: "​front-end web develop";
+    content: "​front-end web develop"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  63.5854341737%, 64.7048823529% {
+    content: "​front-end web develo";
+    content: "​front-end web develo"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  64.7058823529%, 65.8253305322% {
+    content: "​front-end web devel";
+    content: "​front-end web devel"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  65.8263305322%, 66.9457787115% {
+    content: "​front-end web deve";
+    content: "​front-end web deve"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  66.9467787115%, 68.0662268908% {
+    content: "​front-end web dev";
+    content: "​front-end web dev"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  68.0672268908%, 69.18667507% {
+    content: "​front-end web de";
+    content: "​front-end web de"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  69.18767507%, 70.3071232493% {
+    content: "​front-end web d";
+    content: "​front-end web d"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  70.3081232493%, 71.4275714286% {
+    content: "​front-end web ";
+    content: "​front-end web "/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  71.4285714286%, 72.5480196078% {
+    content: "​front-end web";
+    content: "​front-end web"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  72.5490196078%, 73.6684677871% {
+    content: "​front-end we";
+    content: "​front-end we"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  73.6694677871%, 74.7889159664% {
+    content: "​front-end w";
+    content: "​front-end w"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  74.7899159664%, 75.9093641457% {
+    content: "​front-end ";
+    content: "​front-end "/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  75.9103641457%, 77.0298123249% {
+    content: "​front-end";
+    content: "​front-end"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  77.0308123249%, 78.1502605042% {
+    content: "​front-en";
+    content: "​front-en"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  78.1512605042%, 79.2707086835% {
+    content: "​front-e";
+    content: "​front-e"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  79.2717086835%, 80.3911568627% {
+    content: "​front-";
+    content: "​front-"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  80.3921568627%, 81.511605042% {
+    content: "​front";
+    content: "​front"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  81.512605042%, 82.6320532213% {
+    content: "​fron";
+    content: "​fron"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  82.6330532213%, 83.7525014006% {
+    content: "​fro";
+    content: "​fro"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  83.7535014006%, 84.8729495798% {
+    content: "​fr";
+    content: "​fr"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  84.8739495798%, 85.9933977591% {
+    content: "​f";
+    content: "​f"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  85.9943977591%, 100% {
+    content: "​";
+    content: "​"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+}
+@keyframes typed-0 {
+  0%, 1.3995602241% {
+    content: "​f";
+    content: "​f"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  1.4005602241%, 2.8001204482% {
+    content: "​fr";
+    content: "​fr"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  2.8011204482%, 4.2006806723% {
+    content: "​fro";
+    content: "​fro"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  4.2016806723%, 5.6012408964% {
+    content: "​fron";
+    content: "​fron"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  5.6022408964%, 7.0018011204% {
+    content: "​front";
+    content: "​front"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  7.0028011204%, 8.4023613445% {
+    content: "​front-";
+    content: "​front-"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  8.4033613445%, 9.8029215686% {
+    content: "​front-e";
+    content: "​front-e"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  9.8039215686%, 11.2034817927% {
+    content: "​front-en";
+    content: "​front-en"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  11.2044817927%, 12.6040420168% {
+    content: "​front-end";
+    content: "​front-end"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  12.6050420168%, 14.0046022409% {
+    content: "​front-end ";
+    content: "​front-end "/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  14.0056022409%, 15.405162465% {
+    content: "​front-end w";
+    content: "​front-end w"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  15.406162465%, 16.8057226891% {
+    content: "​front-end we";
+    content: "​front-end we"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  16.8067226891%, 18.2062829132% {
+    content: "​front-end web";
+    content: "​front-end web"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  18.2072829132%, 19.6068431373% {
+    content: "​front-end web ";
+    content: "​front-end web "/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  19.6078431373%, 21.0074033613% {
+    content: "​front-end web d";
+    content: "​front-end web d"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  21.0084033613%, 22.4079635854% {
+    content: "​front-end web de";
+    content: "​front-end web de"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  22.4089635854%, 23.8085238095% {
+    content: "​front-end web dev";
+    content: "​front-end web dev"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  23.8095238095%, 25.2090840336% {
+    content: "​front-end web deve";
+    content: "​front-end web deve"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  25.2100840336%, 26.6096442577% {
+    content: "​front-end web devel";
+    content: "​front-end web devel"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  26.6106442577%, 28.0102044818% {
+    content: "​front-end web develo";
+    content: "​front-end web develo"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  28.0112044818%, 29.4107647059% {
+    content: "​front-end web develop";
+    content: "​front-end web develop"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  29.4117647059%, 30.81132493% {
+    content: "​front-end web develope";
+    content: "​front-end web develope"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  30.81232493%, 61.3435378151% {
+    content: "​front-end web developer";
+    content: "​front-end web developer"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  61.3445378151%, 62.4639859944% {
+    content: "​front-end web develope";
+    content: "​front-end web develope"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  62.4649859944%, 63.5844341737% {
+    content: "​front-end web develop";
+    content: "​front-end web develop"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  63.5854341737%, 64.7048823529% {
+    content: "​front-end web develo";
+    content: "​front-end web develo"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  64.7058823529%, 65.8253305322% {
+    content: "​front-end web devel";
+    content: "​front-end web devel"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  65.8263305322%, 66.9457787115% {
+    content: "​front-end web deve";
+    content: "​front-end web deve"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  66.9467787115%, 68.0662268908% {
+    content: "​front-end web dev";
+    content: "​front-end web dev"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  68.0672268908%, 69.18667507% {
+    content: "​front-end web de";
+    content: "​front-end web de"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  69.18767507%, 70.3071232493% {
+    content: "​front-end web d";
+    content: "​front-end web d"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  70.3081232493%, 71.4275714286% {
+    content: "​front-end web ";
+    content: "​front-end web "/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  71.4285714286%, 72.5480196078% {
+    content: "​front-end web";
+    content: "​front-end web"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  72.5490196078%, 73.6684677871% {
+    content: "​front-end we";
+    content: "​front-end we"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  73.6694677871%, 74.7889159664% {
+    content: "​front-end w";
+    content: "​front-end w"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  74.7899159664%, 75.9093641457% {
+    content: "​front-end ";
+    content: "​front-end "/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  75.9103641457%, 77.0298123249% {
+    content: "​front-end";
+    content: "​front-end"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  77.0308123249%, 78.1502605042% {
+    content: "​front-en";
+    content: "​front-en"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  78.1512605042%, 79.2707086835% {
+    content: "​front-e";
+    content: "​front-e"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  79.2717086835%, 80.3911568627% {
+    content: "​front-";
+    content: "​front-"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  80.3921568627%, 81.511605042% {
+    content: "​front";
+    content: "​front"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  81.512605042%, 82.6320532213% {
+    content: "​fron";
+    content: "​fron"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  82.6330532213%, 83.7525014006% {
+    content: "​fro";
+    content: "​fro"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  83.7535014006%, 84.8729495798% {
+    content: "​fr";
+    content: "​fr"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  84.8739495798%, 85.9933977591% {
+    content: "​f";
+    content: "​f"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+  85.9943977591%, 100% {
+    content: "​";
+    content: "​"/"front-end web developer";
+    alt: "front-end web developer";
+  }
+}
+@-webkit-keyframes typed-0-caret {
+  75% {
+    border-color: transparent;
+  }
+}
+@keyframes typed-0-caret {
+  75% {
+    border-color: transparent;
+  }
 }
 
 .hero-scroll {
@@ -653,7 +1155,6 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 40px;
 }
 
 .skill-container {
@@ -674,17 +1175,10 @@ section {
   margin: 15px;
   text-align: center;
 }
-
 .skill-container p {
   visibility: hidden;
 }
-
-.skill-icon {
-  font-size: 3rem;
-  padding-bottom: 20px;
-}
-
-.skill-container:hover {
+.skill-container:hover, .skill-container:focus, .skill-container:active {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   color: #168CFA;
@@ -693,8 +1187,13 @@ section {
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
 }
-.skill-container:hover p {
+.skill-container:hover p, .skill-container:focus p, .skill-container:active p {
   visibility: visible;
+}
+
+.skill-icon {
+  font-size: 3.5rem;
+  padding-bottom: 20px;
 }
 
 .contact-container {
@@ -737,7 +1236,6 @@ form {
           justify-content: center;
 }
 form label {
-  padding-bottom: 5px;
   text-transform: uppercase;
   font-size: 0.7rem;
   letter-spacing: 2px;
@@ -846,12 +1344,12 @@ form button {
 
 footer {
   border-top: 1px solid black;
-  height: 100px;
+  height: 80px;
 }
 footer p {
   text-align: center;
   font-size: 0.85rem;
-  padding: 30px;
+  padding: 20px;
 }
 footer a:hover, footer a:focus {
   -webkit-text-decoration: solid underline #168CFA 3px;

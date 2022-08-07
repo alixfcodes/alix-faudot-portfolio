@@ -24,10 +24,9 @@ li {
 }
 
 button,
-.button {
+a.button {
     font-size: 1.2rem;
     font-weight: 700;
-    line-height: 1.6;
     text-align: center;
     outline: none;
     color: $surface-primary;
@@ -38,23 +37,25 @@ button,
     cursor: pointer;
     transition: box-shadow 200ms ease;
     &:hover, &:focus {
-        box-shadow: -5px 5px $accent-blue;
+        box-shadow: -3px 3px 0 0 $accent-blue;
     }
 }
 
 section {
+    padding-top: 40px;
     margin-bottom: 80px;
 }
 
 .section-heading {
     display: flex;
+    width: 100%;
     padding-bottom: 60px;
 }
 
 .accent-line {
+    display: inline-block;
     width: 100%;
     height: 1px;
     background-color: $text-primary;
     align-self: center;
-    margin-left: 25px;
 }

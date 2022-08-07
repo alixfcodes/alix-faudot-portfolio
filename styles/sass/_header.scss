@@ -1,3 +1,5 @@
+@import 'typed';
+
 .header-container {
     height: 100vh;
     position: relative;
@@ -33,13 +35,12 @@
 .hero-area {
     position: absolute; 
     top: 20%;
+    width: 100%;
 }
 
-// .hero-text {
-//     display: flex;
-//     flex-direction: column;
-//     // vertical-align: middle;
-// }
+.hero-text {
+    width: 100%;
+}
 
 .highlight {
     text-shadow: 0 0 0 $accent-blue;
@@ -48,6 +49,7 @@
     transform: translate(2px,-2px);
     text-shadow: -2px -2px 0 $accent-blue;
     }
+    @include typed("front-end web developer")
 }
 
 

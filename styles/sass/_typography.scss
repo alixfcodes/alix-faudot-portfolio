@@ -55,6 +55,8 @@ h2, h3 {
 
 h2 {
     font-size: 3.2rem;
+    padding-right: 25px;
+
 }
 
 h3 {
@@ -71,4 +73,5 @@ h4 {
 button,
 a.button {
     font-family: $headingFont;
+    font-size: 1.2rem;
 }

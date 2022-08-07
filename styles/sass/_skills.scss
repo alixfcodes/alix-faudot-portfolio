@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 40px;
+    // margin: 40px;
 }
 
 .skill-container {
@@ -23,23 +23,21 @@
     align-items: center;
     margin: 15px;
     text-align: center;
-}
-
-.skill-container p {
-    visibility: hidden;
+    p {
+        visibility: hidden;
+    }
+    &:hover, &:focus, &:active {
+        transition: 0.4s;
+        color: $accent-blue;
+        animation: shakeX;
+        animation-duration: 2s;
+        p {
+            visibility: visible;
+        }
+    }
 }
 
 .skill-icon {
-    font-size: 3rem;
+    font-size: 3.5rem;
     padding-bottom: 20px;
-}
-
-.skill-container:hover {
-    transition: 0.4s;
-    color: $accent-blue;
-    animation: shakeX;
-    animation-duration: 2s;
-    p {
-        visibility: visible;
-    }
 }
