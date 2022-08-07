@@ -1,12 +1,48 @@
 
-
 @media (max-width: 991px) {
-
 
     // FONT size
 
-    h2 {
-        font-size: 2.8rem;
+    // h2 {
+    //     font-size: 2.8rem;
+    // }
+
+    // ABOUT
+
+    .about-section {
+        flex-direction: column-reverse;
+    }
+
+    .about-container {
+        width: 100%;
+        .about-links {
+            flex-direction: column;
+            // justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            ul {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .about-image {
+        // justify-content: flex-start;
+        width: 60%;
+        align-self: flex-start;
+        margin-bottom: 30px;
+    }
+
+
+    // SKILLS
+
+    .skill-container {
+        width: calc(100% / 3);
+    }
+
+        .skill-icon {
+        font-size: 3rem;
+        padding-bottom: 15px;
     }
 
     // PROJECT
@@ -16,6 +52,13 @@
         .project-description {
             width: 100%;
         }
+        .project-description h4 {
+            padding-top: 30px;
+        }
+    }
+
+    .project-2, .project-4 {
+        flex-direction: column-reverse;
     }
 
     // CONTACT
@@ -34,7 +77,6 @@
         }
     }
 
-
 }
 
 
@@ -42,7 +84,71 @@
 
     // FONT size
 
+    h1 {
+        font-size: 4.8rem;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+    
+    h4 {
+        font-size: 1.8rem;
+
+    }
+
+    // CONTACT
+
+    .contact-container {
+        .contact-form {
+            padding-right: 0px;
+        }
+    }
+
+
+}
+
+
+@media (max-width: 600px) {
+
+    // font-size: .about-container    
+    
+    h1 {
+        font-size: 4.3rem;
+    }
+
     h2 {
         font-size: 2.4rem;
     }
+
+    .skill-icon {
+        font-size: 2.5rem;
+        padding-bottom: 10px;
+    }
+
+    .project {
+        padding: 30px;
+    }
+
+    .project-links {
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+        .button {
+            width: 190px;
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 3.8rem;
+    }
+
+    // h2 {
+    //     font-size: 2rem;
+    // }
 }

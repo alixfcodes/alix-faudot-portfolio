@@ -318,7 +318,6 @@ body {
 h1, h2, h3, h4 {
   font-family: "Sprat";
   line-height: 110%;
-  font-weight: 700;
 }
 
 h1 {
@@ -363,8 +362,8 @@ body {
 }
 
 .wrapper {
-  width: 85%;
-  max-width: 1280px;
+  width: 90%;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -1031,7 +1030,29 @@ section {
           align-items: center;
 }
 
-.about-links {
+.about-container {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.about-container .about-title {
+  margin-bottom: 40px;
+}
+.about-container .about-text {
+  margin-bottom: 30px;
+}
+.about-container .about-text p {
+  padding-bottom: 20px;
+}
+.about-container .about-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1044,21 +1065,14 @@ section {
   width: 60%;
 }
 
-.about-container {
-  width: 75%;
-}
-.about-container .about-title {
-  padding-bottom: 40px;
-}
-.about-container p {
-  padding-bottom: 20px;
-}
-
 .about-image {
-  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
 }
 .about-image img {
-  max-width: 250px;
+  width: 100%;
 }
 
 .project {
@@ -1149,16 +1163,16 @@ section {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .skill-container {
-  width: 200px;
+  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1172,7 +1186,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 15px;
+  padding: 20px;
   text-align: center;
 }
 .skill-container p {
@@ -1365,8 +1379,40 @@ li {
 }
 
 @media (max-width: 991px) {
-  h2 {
-    font-size: 2.8rem;
+  .about-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about-container {
+    width: 100%;
+  }
+  .about-container .about-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+  }
+  .about-container .about-links ul {
+    margin-bottom: 30px;
+  }
+  .about-image {
+    width: 60%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-bottom: 30px;
+  }
+  .skill-container {
+    width: 33.3333333333%;
+  }
+  .skill-icon {
+    font-size: 3rem;
+    padding-bottom: 15px;
   }
   .project {
     -webkit-box-orient: vertical;
@@ -1377,6 +1423,15 @@ li {
   .project .project-image,
 .project .project-description {
     width: 100%;
+  }
+  .project .project-description h4 {
+    padding-top: 30px;
+  }
+  .project-2, .project-4 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .contact-container {
     -webkit-box-orient: vertical;
@@ -1396,7 +1451,50 @@ li {
   }
 }
 @media (max-width: 767px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
+  .contact-container .contact-form {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 4.3rem;
+  }
   h2 {
     font-size: 2.4rem;
+  }
+  .skill-icon {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+  }
+  .project {
+    padding: 30px;
+  }
+  .project-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-items: flex-start;
+  }
+  .project-links .button {
+    width: 190px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3.8rem;
   }
 }
