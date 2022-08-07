@@ -23,17 +23,17 @@
     align-items: center;
     padding: 20px;
     text-align: center;
-    p {
-        visibility: hidden;
-    }
+    // p {
+    //     visibility: hidden;
+    // }
     &:hover, &:focus, &:active {
         transition: 0.4s;
         color: $accent-blue;
         animation: shakeX;
         animation-duration: 2s;
-        p {
-            visibility: visible;
-        }
+        // p {
+        //     visibility: visible;
+        // }
     }
 }
 

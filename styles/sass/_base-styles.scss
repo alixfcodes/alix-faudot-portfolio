@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #F5F2ED;
+    background-color: $surface-primary;
 }
 
 .wrapper {
@@ -38,6 +38,23 @@ a.button {
     transition: box-shadow 200ms ease;
     &:hover, &:focus {
         box-shadow: -3px 3px 0 0 $accent-blue;
+    }
+}
+
+.button.border {
+    background-color: transparent;
+    color: $text-primary;
+}
+
+.button.borderless {
+    padding: 0;
+    border-color: transparent;
+    background-color: transparent;
+    transition-property: text-shadow;
+    color: $text-primary;
+    &:hover, &:focus {
+    box-shadow: none;
+    text-shadow: -1px 1px 0 $accent-blue;
     }
 }
 
