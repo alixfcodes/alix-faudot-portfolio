@@ -38,11 +38,11 @@ form {
         font-family: $bodyFont;
         border: 1px solid $text-primary;
         background-color: inherit;
-        box-shadow: -2px 2px 0 0 $text-primary;
+        box-shadow: -2px 2px $text-primary;
         margin-bottom: 25px;
         outline: none;
-        &:hover {
-            box-shadow: -4px 4px solid $accent-blue;
+        &:hover, &:active {
+            box-shadow: -4px 4px 0 0 $accent-blue;
         }
         &:focus {
             box-shadow: -4px 4px 0 0 $accent-blue;
@@ -76,7 +76,7 @@ form {
     li {
         font-size: 1.3rem;
         padding-right: 30px;
-        i:hover, i:focus {
+        i:hover, i:focus, i:active {
             transition: 0.2s;
             transform: scale(1.3);
         }
@@ -86,7 +86,7 @@ form {
 .inline-link {
     box-shadow: inset 0 -1px 0 0 $accent-blue;
     transition: box-shadow 200ms ease;
-    &:hover, &:active {
+    &:hover, &:focus, &:active {
         box-shadow: inset 0 -3px 0 0 $accent-blue;
     }
 }

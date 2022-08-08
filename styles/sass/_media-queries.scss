@@ -1,32 +1,22 @@
 
 @media (max-width: 1100px) {
 
-    // FONT size
-
-    // h2 {
-    //     font-size: 2.8rem;
-    // }
-
-
     // SKILLS
-
     .skill-container {
         width: calc(100% / 3);
     }
 
-        .skill-icon {
+    .skill-icon {
         font-size: 3rem;
         padding-bottom: 15px;
     }
 
     // PROJECTS
-
     .project-description {
         padding: 30px;
     }
 
     // CONTACT
-
     .contact-container {
         flex-direction: column;
         .contact-text,
@@ -40,14 +30,11 @@
             margin-bottom: 40px;
         }
     }
-
 }
-
 
 @media (max-width: 930px) {
 
     // FONT size
-
     h1 {
         font-size: 4.8rem;
     }
@@ -62,11 +49,19 @@
     
     h4 {
         font-size: 1.8rem;
-
     }
 
-        // ABOUT
+    // HEADER
 
+    .desktop-menu-dropdown {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+
+    // ABOUT
     .about-section {
         flex-direction: column-reverse;
     }
@@ -91,7 +86,7 @@
         margin-bottom: 30px;
     }
 
-        // PROJECT
+    // PROJECT
     .project {
         flex-direction: column;
         .project-image,
@@ -108,20 +103,16 @@
     }
 
     // CONTACT
-
     .contact-container {
         .contact-form {
             padding-right: 0px;
         }
     }
-
 }
-
 
 @media (max-width: 600px) {
 
-    // font-size: .about-container    
-    
+    //FONTS
     h1 {
         font-size: 4.3rem;
     }
@@ -134,13 +125,13 @@
         font-size: 1.8rem;
     }
 
-    // .button
+    // BUTTON
     button,
-a.button {
-    font-size: 1.1rem;
-    font-weight: 700;
-    padding: 12px 14px;
-}
+    a.button {
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 12px 14px;
+    }
 
     .skill-icon {
         font-size: 2.5rem;
@@ -150,11 +141,11 @@ a.button {
     .project-description {
         padding: 30px;
     }
-
 }
 
 @media (max-width: 480px) {
 
+    // FONTS
     h1 {
         font-size: 3.1rem;
     }
@@ -171,6 +162,7 @@ a.button {
         font-size: 0.8rem;
     }
 
+    // PROJECTS
     .project-links {
         display: flex;
         flex-direction: column;
@@ -181,5 +173,4 @@ a.button {
             margin-bottom: 10px;
         }
     }
-
 }

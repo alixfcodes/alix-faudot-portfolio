@@ -21,7 +21,6 @@
         <div class="header-container wrapper">
             <!-- NAV -->
             <nav class="desktop-nav">
-                <div class="desktop-logo-menu">
                     <div class="logo">AF</div>
                     <!-- <button tabindex="0">
                         <i class="hidden-menu-select fas fa-ellipsis-v" aria-label="open menu"></i>
@@ -43,8 +42,30 @@
                             <a href="#contact" class="nav-icon"><p class="nav-item-text">Contact</p></a>
                         </li>
                     </ul>
-                </div>
                 <div class="mode-switch">ON/OFF</div>
+                <div id="hamburger-icon" class="button border" onclick="toggleMobileMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <ul class="mobile-menu">
+                        <li class="nav-item" tabindex="0">
+                            <a href="#home" class="nav-icon"><p class="nav-item-text">Home</p></a>
+                        </li>
+                        <li class="nav-item" tabindex="0">
+                            <a href="#about" class="nav-icon"><p class="nav-item-text">About</p></a>
+                        </li>
+                        <li class="nav-item" tabindex="0">
+                            <a href="#skills" class="nav-icon"><p class="nav-item-text">Skills</p></a>
+                        </li>
+                        <li class="nav-item" tabindex="0">
+                            <a href="#projects" class="nav-icon"><p class="nav-item-text">Projects</p></a>
+                        </li>
+                        <li class="nav-item" tabindex="0">
+                            <a href="#contact" class="nav-icon"><p class="nav-item-text">Contact</p></a>
+                        </li>
+                    </ul>
+
+                </div>
             </nav>
             <div class="hero-area">
                 <div class="hero-text">
@@ -179,80 +200,84 @@
                     <h2 class="projects-title">Projects</h2>
                     <div class="accent-line"></div>
                 </div>
-                <div class="project project-1" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                    <div class="project-image">
-                        <img src="./assets/daily-musings-of-willow.png" alt="thumbnail of Musings of Willow project">
+                <div class="projects-container">
+                    <div class="project project-1" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="project-image">
+                            <img src="./assets/daily-musings-of-willow.png" alt="thumbnail of Musings of Willow project">
+                        </div>
+                        <div class="project-description">
+                            <h4>Daily Musings of Willow</h4>
+                            <p>Multi-page PSD conversion made using a client brief and design files. Responsive across devices.</p>
+                            <ul class="tools-used">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Sass</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <div class="project-links" tabindex="0">
+                                <a href="https://musings-of-willow.netlify.app/" class="button" target="_blank" rel="noopener noreferrer">view live</a>
+                                <a href="https://github.com/alixfcodes/alix-faudot-project-one" class="button border" target="_blank" rel="noopener noreferrer">view code</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project-description">
-                        <h4>Daily Musings of Willow</h4>
-                        <p>Multi-page PSD conversion made using a client brief and design files. Responsive across devices.</p>
-                        <ul class="tools-used">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Sass</li>
-                            <li>JavaScript</li>
-                        </ul>
-                        <div class="project-links" tabindex="0">
-                            <a href="https://musings-of-willow.netlify.app/" class="button" target="_blank" rel="noopener noreferrer">view live</a>
-                            <a href="https://github.com/alixfcodes/alix-faudot-project-one" class="button border" target="_blank" rel="noopener noreferrer">view code</a>
+                    <div class="project project-2" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="project-description">
+                            <h4>Feel Good Makeup</h4>
+                            <p>An app using the Makeup API that allows eco-conscious folks to find a make up that's good for them and the environment. Paired programming with <a href="" target="_blank" rel="noopener noreferrer" class="inline-link">Chris West</a>.</p>
+                            <ul class="tools-used">
+                                <li>API</li>
+                                <li>CSS</li>
+                                <li>Sass</li>
+                                <li>HTML</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <div class="project-links" tabindex="0">
+                                <a href="https://feel-good-makeup.netlify.app/" class="button" target="_blank" rel="noopener noreferrer">view live</a>
+                                <a href="https://github.com/cohort42-project2-alix-chris/feel-good-makeup" class="button border" target="_blank" rel="noopener noreferrer">view code</a>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="./assets/feel-good-makeup.png" alt="thumbnail of Feel Good Makeup project">
                         </div>
                     </div>
                 </div>
-                <div class="project project-2">
-                    <div class="project-description" data-aos="fade-right">
-                        <h4>Feel Good Makeup</h4>
-                        <p>An app using the Makeup API that allows eco-conscious folks to find a make up that's good for them and the environment. Paired programming with <a href="" target="_blank" rel="noopener noreferrer" class="inline-link">Chris West</a>.</p>
-                        <ul class="tools-used">
-                            <li>API</li>
-                            <li>CSS</li>
-                            <li>Sass</li>
-                            <li>HTML</li>
-                            <li>JavaScript</li>
-                        </ul>
-                        <div class="project-links" tabindex="0">
-                            <a href="https://feel-good-makeup.netlify.app/" class="button" target="_blank" rel="noopener noreferrer">view live</a>
-                            <a href="https://github.com/cohort42-project2-alix-chris/feel-good-makeup" class="button border" target="_blank" rel="noopener noreferrer">view code</a>
+                <div class="projects-container">
+                    <div class="project project-3" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="project-image">
+                            <img src="./assets/placeholder-image.png" alt="thumbnail of X project">
                         </div>
-                    <div>
-                    <div class="project-image" data-aos="fade-left">
-                        <img src="./assets/feel-good-makeup.png" alt="thumbnail of Feel Good Makeup project">
-                    </div>
-                </div>
-                <div class="project project-3" data-aos="zoom-in">
-                    <div class="project-image">
-                        <img src="./assets/placeholder-image.png" alt="thumbnail of X project">
-                    </div>
-                    <div class="project-description">
-                        <h4>Project 3</h4>
-                        <p>This app was my first time creating something with React.</p>
-                        <ul class="tools-used">
-                            <li>React</li>
-                            <li>Firebase</li>
-                            <li>CSS</li>
-                        </ul>
-                        <div class="project-links" tabindex="0">
-                            <a href="" class="button" target="_blank" rel="noopener noreferrer">view live</a>
-                            <a href="" class="button border" target="_blank" rel="noopener noreferrer">view code</a>
+                        <div class="project-description">
+                            <h4>Project 3</h4>
+                            <p>This app was my first time creating something with React.</p>
+                            <ul class="tools-used">
+                                <li>React</li>
+                                <li>Firebase</li>
+                                <li>CSS</li>
+                            </ul>
+                            <div class="project-links" tabindex="0">
+                                <a href="" class="button" target="_blank" rel="noopener noreferrer">view live</a>
+                                <a href="" class="button border" target="_blank" rel="noopener noreferrer">view code</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="project project-4" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-delay="100">
-                    <div class="project-description">
-                        <h4>Project 4</h4>
-                        <p>An app created with React and an API. This was a group project made by A, B, C, and myself.</p>
-                        <ul class="tools-used">
-                            <li>API</li>
-                            <li>React</li>
-                            <li>CSS</li>
-                            <li>Firebase</li>
-                        </ul>
-                        <div class="project-links" tabindex="0">
-                            <a href="" class="button" target="_blank" rel="noopener noreferrer">view live</a>
-                            <a href="" class="button border" target="_blank" rel="noopener noreferrer">view code</a>
+                    <div class="project project-4" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="project-description">
+                            <h4>Project 4</h4>
+                            <p>An app created with React and an API. This was a group project made by A, B, C, and myself.</p>
+                            <ul class="tools-used">
+                                <li>API</li>
+                                <li>React</li>
+                                <li>CSS</li>
+                                <li>Firebase</li>
+                            </ul>
+                            <div class="project-links" tabindex="0">
+                                <a href="" class="button" target="_blank" rel="noopener noreferrer">view live</a>
+                                <a href="" class="button border" target="_blank" rel="noopener noreferrer">view code</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-image">
-                        <img src="./assets/placeholder-image.png" alt="thumbnail of X project">
+                        <div class="project-image">
+                            <img src="./assets/placeholder-image.png" alt="thumbnail of X project">
+                        </div>
                     </div>
                 </div>
             </div><!-- END of wrapper -->
@@ -311,20 +336,17 @@
             </div><!-- END of WRAPPER -->
         </section>
     </main>
-
     <!-- FOOTER -->
     <footer>
         <a href="#home"><p class="top-link">Back to Top ↑</p></a>
         <p>Developed by Alix Faudot 2022</p>
     </footer>
-
+    <!-- SCRIPT -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <script>
         AOS.init();
     </script>
-
-    <!-- Thank you for thr Animate On Scroll Library (https://michalsnik.github.io/aos/) for the scroll animations -->
-
+    <script src="./script.js"></script>
+    <!-- Thank you to Animate On Scroll Library (https://michalsnik.github.io/aos/) for the scroll animations -->
 </body>
 </html>

@@ -295,6 +295,7 @@ template {
   font-weight: normal;
   font-style: normal;
 }
+/* custom heading font */
 @font-face {
   font-family: "Sprat";
   src: url(../assets/fonts/Sprat-RegularBold.otf);
@@ -318,6 +319,7 @@ body {
 h1, h2, h4 {
   font-family: "Sprat";
   line-height: 110%;
+  font-weight: 700;
 }
 
 h1 {
@@ -390,10 +392,10 @@ a.button {
   -webkit-box-shadow: none;
           box-shadow: none;
   cursor: pointer;
-  -webkit-transition: -webkit-box-shadow 200ms ease;
-  transition: -webkit-box-shadow 200ms ease;
-  transition: box-shadow 200ms ease;
-  transition: box-shadow 200ms ease, -webkit-box-shadow 200ms ease;
+  -webkit-transition: -webkit-box-shadow 0.2s ease;
+  transition: -webkit-box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
 }
 button:hover, button:focus,
 a.button:hover,
@@ -411,14 +413,14 @@ a.button:focus {
   padding: 0;
   border-color: transparent;
   background-color: transparent;
-  -webkit-transition-property: text-shadow;
-  transition-property: text-shadow;
+  -webkit-transition: text-shadow 0.2s ease;
+  transition: text-shadow 0.2s ease;
   color: #082340;
 }
-.button.borderless:hover, .button.borderless:focus {
+.button.borderless:hover, .button.borderless:focus, .button.borderless:active {
   -webkit-box-shadow: none;
           box-shadow: none;
-  text-shadow: -1px 1px 0 #168CFA;
+  text-shadow: -1px 1px 0 0 #168CFA;
 }
 
 section {
@@ -454,6 +456,10 @@ section {
   position: relative;
 }
 
+.logo {
+  margin-right: 50px;
+}
+
 .desktop-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -461,32 +467,109 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: none;
   font-family: "Montserrat", sans-serif;
-  padding-top: 30px;
-}
-
-.desktop-logo-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 500px;
+  height: 50px;
 }
 
 .desktop-menu-dropdown {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   font-size: 0.85rem;
   font-weight: normal;
 }
-.desktop-menu-dropdown li a:hover, .desktop-menu-dropdown li a:focus, .desktop-menu-dropdown li a:active {
+.desktop-menu-dropdown li {
+  margin-right: 50px;
+}
+.desktop-menu-dropdown li:hover, .desktop-menu-dropdown li:focus, .desktop-menu-dropdown li:active {
   -webkit-text-decoration: solid underline #168CFA 3px;
           text-decoration: solid underline #168CFA 3px;
   text-underline-offset: 12px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: #082340;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+          transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+          transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+  z-index: 10;
+  background-color: #FDFAF5;
+  padding-top: 30px;
+}
+.mobile-menu li p {
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+.mobile-menu li:hover, .mobile-menu li:focus, .mobile-menu li:active {
+  -webkit-text-decoration: solid underline #168CFA 5px;
+          text-decoration: solid underline #168CFA 5px;
+  text-underline-offset: 12px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .hero-area {
@@ -504,7 +587,7 @@ section {
   -webkit-transition: text-shadow 0.2s, color 0.2s;
   transition: text-shadow 0.2s, color 0.2s;
 }
-.highlight:hover, .highlight:focus {
+.highlight:hover:focus:active {
   -webkit-transform: translate(2px, -2px);
           transform: translate(2px, -2px);
   text-shadow: -2px -2px 0 #168CFA;
@@ -1155,11 +1238,13 @@ section {
 }
 .tools-used li {
   font-size: 0.8rem;
-  border: 1px solid black;
+  border: 1px solid #082340;
   padding: 2px 4px;
   margin: 0 6px 6px 0;
+  -webkit-transition: border 0.2s, color 0.2s;
+  transition: border 0.2s, color 0.2s;
 }
-.tools-used li:hover, .tools-used li:focus {
+.tools-used li:hover, .tools-used li:focus, .tools-used li:active {
   border: 1px solid #168CFA;
   color: #168CFA;
 }
@@ -1206,10 +1291,8 @@ section {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   color: #168CFA;
-  -webkit-animation: shakeX;
-          animation: shakeX;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation: shakeX 2s;
+          animation: shakeX 2s;
 }
 
 .skill-icon {
@@ -1267,15 +1350,16 @@ form textarea {
   font-family: "Montserrat", sans-serif;
   border: 1px solid #082340;
   background-color: inherit;
-  -webkit-box-shadow: -2px 2px 0 0 #082340;
-          box-shadow: -2px 2px 0 0 #082340;
+  -webkit-box-shadow: -2px 2px #082340;
+          box-shadow: -2px 2px #082340;
   margin-bottom: 25px;
   outline: none;
 }
-form input:hover,
-form textarea:hover {
-  -webkit-box-shadow: -4px 4px solid #168CFA;
-          box-shadow: -4px 4px solid #168CFA;
+form input:hover, form input:active,
+form textarea:hover,
+form textarea:active {
+  -webkit-box-shadow: -4px 4px 0 0 #168CFA;
+          box-shadow: -4px 4px 0 0 #168CFA;
 }
 form input:focus,
 form textarea:focus {
@@ -1343,7 +1427,7 @@ form button {
   font-size: 1.3rem;
   padding-right: 30px;
 }
-.social-nav ul li i:hover, .social-nav ul li i:focus {
+.social-nav ul li i:hover, .social-nav ul li i:focus, .social-nav ul li i:active {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   -webkit-transform: scale(1.3);
@@ -1358,7 +1442,7 @@ form button {
   transition: box-shadow 200ms ease;
   transition: box-shadow 200ms ease, -webkit-box-shadow 200ms ease;
 }
-.inline-link:hover, .inline-link:active {
+.inline-link:hover, .inline-link:focus, .inline-link:active {
   -webkit-box-shadow: inset 0 -3px 0 0 #168CFA;
           box-shadow: inset 0 -3px 0 0 #168CFA;
 }
@@ -1372,17 +1456,13 @@ footer p {
   font-size: 0.85rem;
   padding: 20px;
 }
-footer a:hover, footer a:focus {
+footer a:hover, footer a:focus, footer a:active {
   -webkit-text-decoration: solid underline #168CFA 3px;
           text-decoration: solid underline #168CFA 3px;
   text-underline-offset: 12px;
 }
 footer a p.top-link {
   font-weight: 700;
-}
-
-li {
-  text-decoration: none;
 }
 
 @media (max-width: 1100px) {
@@ -1425,6 +1505,12 @@ li {
   }
   h4 {
     font-size: 1.8rem;
+  }
+  .desktop-menu-dropdown {
+    display: none;
+  }
+  #hamburger-icon {
+    display: block;
   }
   .about-section {
     -webkit-box-orient: vertical;

@@ -3,32 +3,95 @@
     position: relative;
 }
 
+.logo {
+    margin-right: 50px;
+}
+
 .desktop-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border: none;
     font-family: $bodyFont;
-    padding-top: 30px;
-}
-
-.desktop-logo-menu {
-    display: flex;
-    width: 500px;
+    // padding-top: 30px;
+    height: 50px;
 }
 
 .desktop-menu-dropdown {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
     font-size: 0.85rem;
     font-weight: normal;
-    li a {
+    li {
+        margin-right: 50px;
         &:hover, &:focus, &:active {
             text-decoration: solid underline $accent-blue 3px;
             text-underline-offset: 12px;
+            transform: scale(1.1);
+            transition: 0.3s;
         }
     }
 }
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: $text-primary;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    z-index: 10;
+    background-color: $surface-primary;
+    padding-top: 30px;
+    li {
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 50px;
+        }
+        &:hover, &:focus, &:active {
+            text-decoration: solid underline $accent-blue 5px;
+            text-underline-offset: 12px;
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+    }
+}
+
 
 .hero-area {
     position: absolute; 
@@ -43,25 +106,12 @@
 .highlight {
     text-shadow: 0 0 0 $accent-blue;
     transition: text-shadow .2s, color .2s;
-    &:hover, &:focus {
-    transform: translate(2px,-2px);
-    text-shadow: -2px -2px 0 $accent-blue;
+    &:hover:focus:active {
+        transform: translate(2px,-2px);
+        text-shadow: -2px -2px 0 $accent-blue;
     }
-    @include typed("front-end web developer")
+    @include typed("front-end web developer");
 }
-
-
-// @keyframes pulse {
-// 0% {
-//     transform: translate(0, 0);
-// }
-// 50% {
-//     transform: translate(0, 10px);
-// }
-// 100% {
-//     transform: translate(0, 0);
-// }
-// }
 
 .hero-scroll {
     position: absolute;
@@ -76,26 +126,26 @@
 }
 
 .hero-scroll .chevron {
-  margin-top: 20px;
-  display: block;
-  animation: pulse 2s infinite;
-  color: $accent-blue;
-  text-align: center;
+    margin-top: 20px;
+    display: block;
+    animation: pulse 2s infinite;
+    color: $accent-blue;
+    text-align: center;
 }
 
 .chevron.bottom::before {
-  top: 0;
-  transform: rotate(135deg);
+    top: 0;
+    transform: rotate(135deg);
 }
 
 .chevron::before {
-  border-style: solid;
-  border-width: 0.25em 0.25em 0 0;
-  content: '';
-  display: inline-block;
-  height: 20px;
-  position: relative;
-  transform: rotate(-45deg);
-  vertical-align: top;
-  width: 20px;
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    content: '';
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 20px;
 }
