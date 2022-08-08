@@ -1,3 +1,5 @@
+/* special thank you to Typed.CSS (https://typedcss.com/) for this animation */
+
 $__typed-pauses-chars: (fwd: "\200b", bwd: "\200c", both: "\feff");
 @function __typed-percent-calc($dur-char-fwd, $dur-full-gap, $dur-char-bwd, $dur-done-gap, $dur-total, $strings, $string-nth, $char-nth, $modifier) {
 	$string: nth($strings, $string-nth);

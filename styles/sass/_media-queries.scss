@@ -7,32 +7,6 @@
     //     font-size: 2.8rem;
     // }
 
-    // ABOUT
-
-    .about-section {
-        flex-direction: column-reverse;
-    }
-
-    .about-container {
-        width: 100%;
-        .about-links {
-            flex-direction: column;
-            // justify-content: space-between;
-            align-items: flex-start;
-            width: 100%;
-            ul {
-                margin-bottom: 30px;
-            }
-        }
-    }
-
-    .about-image {
-        // justify-content: flex-start;
-        width: 60%;
-        align-self: flex-start;
-        margin-bottom: 30px;
-    }
-
 
     // SKILLS
 
@@ -70,7 +44,7 @@
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 930px) {
 
     // FONT size
 
@@ -91,12 +65,41 @@
 
     }
 
+        // ABOUT
+
+    .about-section {
+        flex-direction: column-reverse;
+    }
+
+    .about-container {
+        width: 100%;
+        .about-links {
+            flex-direction: column;
+            // justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            ul {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .about-image {
+        // justify-content: flex-start;
+        width: 60%;
+        align-self: flex-start;
+        margin-bottom: 30px;
+    }
+
         // PROJECT
     .project {
         flex-direction: column;
         .project-image,
         .project-description {
             width: 100%;
+        }
+        .project-image {
+            margin-bottom: 10px;
         }
     }
 
@@ -111,7 +114,6 @@
             padding-right: 0px;
         }
     }
-
 
 }
 

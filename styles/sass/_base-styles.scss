@@ -65,12 +65,14 @@ section {
 
 .section-heading {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     padding-bottom: 60px;
 }
 
 .accent-line {
-    display: inline-block;
+    display: inline;
     width: 100%;
     height: 1px;
     background-color: $text-primary;
